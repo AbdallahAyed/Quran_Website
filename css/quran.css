@@ -1,0 +1,2614 @@
+:root {
+  --main-color: #e9e6d7;
+  --secondary-color: #f2ac0d;
+  --third-color: #1c3f39;
+  --forth-color: #556561;
+  --fifth-color: #b7cbc7;
+  --sixth-color: #315e56;
+  --font-size-sm: 16px;
+}
+
+.main {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--third-color);
+  text-align: center;
+  line-height: 56px;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Start Header */
+header {
+  min-height: 81px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 120px;
+  padding-top: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  background-color: var(--forth-color);
+  width: 88%;
+  height: 1px;
+  bottom: -5px;
+  left: 80px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  padding: 0 30px;
+  text-transform: capitalize;
+  font-size: var(--font-size-sm);
+  line-height: 28px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: var(--forth-color);
+}
+
+.nav li:hover a {
+  color: #263833;
+}
+
+.signing > button {
+  font-size: var(--font-size-sm);
+  border: 0;
+  cursor: pointer;
+}
+
+.header__log-in {
+  color: var(--third-color);
+  font-weight: 600;
+  background: none;
+  padding: 0 40px;
+}
+
+.header__sign-up {
+  color: #ffffff;
+  padding: 15px 30px;
+  background-color: #26534c;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+header .menu {
+  display: none;
+}
+/* End Header */
+/* Start Main Page */
+main {
+  position: relative;
+}
+
+main .overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+main .overlay img {
+  width: 600px;
+  position: relative;
+  bottom: -5px;
+  user-select: none;
+}
+
+main .overlay:last-child {
+  left: 50px;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main .content .text h1 {
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--third-color);
+  width: 679px;
+  position: relative;
+  left: 293px;
+  padding-top: 2px;
+}
+
+main .content .text h1 span::after {
+  content: "";
+  position: absolute;
+  width: 187px;
+  height: 84px;
+  background-color: rgb(0 0 0 / 0%);
+  left: 352px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: 60px;
+}
+
+main .content .text p {
+  color: var(--forth-color);
+  font-size: 18px;
+  line-height: 30px;
+  width: 632px;
+  position: relative;
+  left: 321px;
+  margin-bottom: 47px;
+}
+
+main .btns a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--third-color);
+  border-radius: 7px;
+  margin: 10px;
+}
+
+main .btns a:first-child {
+  background-color: var(--secondary-color);
+}
+
+main .btns a:last-child {
+  border: 2px solid var(--forth-color);
+  padding: 13px;
+}
+
+main .btns img {
+  padding-right: 8px;
+  position: relative;
+  top: 2px;
+}
+
+main .images {
+  margin-top: 71px;
+  margin-bottom: 50px;
+}
+
+main .images img {
+  border-radius: 10px 10px 0 0;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+main .images img:first-child {
+  width: 639px;
+}
+
+main .images img:last-child {
+  width: 449px;
+}
+/* End Main Page */
+/* Start Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--third-color);
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  bottom: 54px;
+  align-items: center;
+  height: 196px;
+}
+
+.statistics div {
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+
+.statistics div:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 184px;
+  top: 34px;
+  background-color: var(--sixth-color);
+  height: 90px;
+  width: 2px;
+}
+
+.statistics div h1 {
+  color: var(--secondary-color);
+  font-size: 42px;
+}
+
+.statistics div h4 {
+  color: var(--fifth-color);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+/* End Statistics Section */
+/* Start About Section */
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about .images img {
+  width: 270px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.about .images img:last-child {
+  position: relative;
+  top: 30px;
+}
+
+.about .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .content h2 {
+  color: var(--third-color);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about .content h2 span {
+  position: relative;
+}
+
+.about .content h2 span::before {
+  content: "";
+  position: absolute;
+  width: 131px;
+  height: 70px;
+  background-color: rgb(0 0 0 / 0%);
+  left: -9px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: -7px;
+}
+
+.about .content p {
+  color: var(--forth-color);
+  font-weight: 400;
+  width: 470px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.about .content button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  text-transform: capitalize;
+  color: var(--third-color);
+  border-radius: 7px;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  width: 170px;
+  height: 54px;
+  border: 0;
+  position: relative;
+  right: 9px;
+  cursor: pointer;
+}
+/* End About Section */
+/* Start Translation Section */
+.translation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+
+.translation .text {
+  margin-top: 50px;
+}
+
+.translation .text h1 span::before {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 69px;
+  background-color: rgb(0 0 0 / 0%);
+  left: 409px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: -7px;
+  z-index: -1;
+}
+
+.translation .settings {
+  display: flex;
+  flex-direction: row;
+  min-width: 1260px;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.translation .settings .choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ccd3d2;
+  height: 54px;
+  width: 184px;
+  border-radius: 10px;
+  position: relative;
+  right: 115px;
+}
+
+.translation .settings .choice span {
+  font-size: 16px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+.translation .settings .choice span:first-child {
+  background-color: rgb(38 83 76);
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 61px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  left: 4px;
+  top: 1px;
+}
+
+.translation .settings .choice span:last-child {
+  color: var(--third-color);
+  right: 10px;
+}
+
+.translation .settings p {
+  font-size: 16px;
+  color: #5f6968;
+  font-weight: 400;
+  position: relative;
+  left: 115px;
+}
+
+.translation .settings p span {
+  font-weight: 600;
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+.translation .settings p img {
+  transform: rotate(90deg);
+  filter: invert(112%) sepia(10%) saturate(100%) hue-rotate(241deg)
+    brightness(171%) contrast(156%);
+  width: 8px;
+  position: relative;
+  top: 1px;
+  left: 4px;
+}
+
+.quranic-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.quranic-pictures .picture {
+  background-color: #ffffff;
+  display: flex;
+  width: 370px;
+  height: 98px;
+  border-radius: 6px;
+}
+
+.quranic-pictures .picture .num {
+  background-color: var(--main-color);
+  color: rgb(96 94 84);
+  padding: 20px;
+  border-radius: 7px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  left: 17px;
+  top: 23px;
+}
+
+.quranic-pictures .picture .names {
+  display: flex;
+  width: 370px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quranic-pictures .picture .names .en-txt .ar-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--third-color);
+}
+
+.quranic-pictures .picture .names .en-txt .en-name {
+  color: var(--forth-color);
+  font-size: 14px;
+  position: relative;
+  bottom: 6px;
+}
+
+.quranic-pictures .picture .names .ar-txt .ar-name {
+  font-family: "Tajawal", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--third-color);
+}
+
+.quranic-pictures .picture .names .ar-txt .verses {
+  font-size: 14px;
+  color: var(--forth-color);
+  position: relative;
+  bottom: 5px;
+}
+
+.on {
+  background-color: rgb(38 83 76) !important;
+  box-shadow: 3px 6px 20px 0px #315e5673;
+}
+
+.on-color {
+  color: #ffffff !important;
+}
+
+.on-background {
+  background-color: #ffffff !important;
+}
+
+.translation .show {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border: 0;
+  font-weight: 600;
+  height: 54px;
+  width: 160px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* End Translation Section */
+/* Start Reciters Section */
+.reciters {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 472px;
+}
+
+.reciters .images img {
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.reciters .images img:first-child {
+  width: 154px;
+}
+
+.reciters .images img:nth-child(2) {
+  width: 176px;
+}
+
+.reciters .images img:last-child {
+  width: 326px;
+  box-shadow: -2px 1px 20px #0000005c;
+}
+
+.reciters .overlay {
+  width: 229px;
+  height: 172px;
+  background-color: rgb(0 0 0);
+  position: absolute;
+  top: 145px;
+  left: 435px;
+  border-radius: 8px;
+  filter: blur(81px);
+}
+
+.reciter-info {
+  position: absolute;
+  text-align: center;
+  left: 427px;
+  top: 250px;
+}
+
+.reciter-info h4 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.reciter-info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.reciter-info button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border: 0;
+  font-weight: 600;
+  height: 54px;
+  width: 160px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reciters .info {
+  position: relative;
+  right: 100px;
+}
+
+.reciters .info h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(255 255 255);
+  width: 352px;
+}
+
+.reciters .info h1 span::before {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 55px;
+  background-color: rgb(0 0 0 / 0%);
+  left: 151px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: 71px;
+}
+
+.reciters .info p {
+  width: 350px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--fifth-color);
+  position: relative;
+}
+
+.reciters .ellipse {
+  position: absolute;
+  top: 277px;
+  left: 1091px;
+}
+
+.reciters .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  position: relative;
+  right: 77px;
+}
+
+.reciters .arrow .right {
+  border: 1px solid var(--fifth-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  position: relative;
+  left: 76px;
+}
+
+.reciters .arrow .left {
+  background-color: #ffffff;
+  padding: 13px 21px;
+  border-radius: 6px;
+  transform: rotate(180deg);
+  position: relative;
+  right: 88px;
+}
+
+.reciters .arrow .dots {
+  display: flex;
+  position: relative;
+}
+
+.reciters .arrow .dots div {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #3c645d;
+  margin-right: 10px;
+}
+/* End Reciters Section */
+/* Start Blog Section */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: rgb(255 255 255);
+  padding-top: 72px;
+}
+
+.blogs .txt {
+  text-align: center;
+}
+
+.blogs .txt h1 span::before {
+  content: "";
+  position: absolute;
+  width: 103px;
+  height: 70px;
+  background-color: rgb(0 0 0 / 0%);
+  left: 302px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: -6px;
+}
+
+.blogs .txt p {
+  font-size: 16px;
+  width: 435px;
+  color: var(--forth-color);
+}
+
+.blogs .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.blogs .content .blog {
+  display: flex;
+  background-color: rgb(255 255 255);
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  width: 543px;
+  transition: 0.5s linear;
+}
+
+.blogs .content .blog img {
+  border-radius: 8px;
+}
+
+.blogs .content .blog .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.blogs .content .blog h3 {
+  width: 354px;
+  position: relative;
+}
+
+.blogs .content .blog h3::after {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 3px;
+  background-color: rgb(38 83 76);
+  border-radius: 10px;
+  top: 76px;
+  left: 1px;
+  transition: 0.2s ease-out;
+}
+
+.blogs .content .blog p {
+  width: 285px;
+  font-size: 14px;
+  color: var(--forth-color);
+}
+
+.blogs .content .blog a {
+  text-decoration: none;
+  color: var(--third-color);
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.blogs .blog:hover {
+  border: 0;
+  box-shadow: #c8c8c8 6px 5px 20px 0px;
+}
+
+.blogs .blog:hover a {
+  color: var(--secondary-color);
+}
+
+.blogs .blog:hover h3::after {
+  width: 100px;
+}
+/* End Blog Section */
+/* Start Download Section */
+.download {
+  background-color: var(--third-color);
+  position: relative;
+  z-index: -2;
+  height: 458px;
+}
+
+.download .overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.download .overlay img {
+  width: 550px;
+  clip-path: inset(0 0 43% 0);
+}
+
+.download .content {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.download .content h1 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  width: 616px;
+  margin-top: 66px;
+}
+
+.download .content h1 span::before {
+  content: "";
+  position: absolute;
+  width: 103px;
+  height: 59px;
+  background-color: rgb(0 0 0 / 0%);
+  left: 264px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  top: 49px;
+}
+
+.download .content h1 + p {
+  width: 536px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--fifth-color);
+}
+
+.download .text {
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.download .content .btns {
+  display: flex;
+  width: 35vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.download .content .btns button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+  border: 0;
+  height: 55px;
+}
+
+.download .content .btns button img {
+  margin-right: 10px;
+}
+
+.download .content .btns button span {
+  font-size: 12px;
+  color: var(--third-color);
+  text-transform: uppercase;
+}
+
+.download .content .btns button p {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--third-color);
+  margin-top: 0;
+}
+/* End Download Section */
+/* Start Footer */
+.mb-15 {
+  margin-bottom: 15px;
+}
+.w-355 {
+  width: 355px;
+  color: var(--forth-color);
+}
+
+footer {
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 450px;
+}
+
+footer .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 61px;
+  place-items: baseline;
+  margin-left: 50px;
+  position: relative;
+}
+
+footer .links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--forth-color);
+  top: 363px;
+  right: 32px;
+}
+
+footer .main-row div {
+  margin-bottom: 30px !important;
+}
+
+footer .links div > a {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--forth-color);
+}
+
+footer .links .name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--third-color);
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--third-color);
+}
+
+footer .logo img {
+  margin-right: 8px;
+}
+
+footer .main-row .socials {
+  position: relative;
+  left: 15px;
+}
+
+footer .main-row .socials img:not(:first-child) {
+  margin-left: 40px;
+}
+
+footer .main-row .socials img {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+footer .main-row .socials img + div {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+}
+
+footer .main-row .socials img + div span {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: rgb(209 205 183);
+  left: -31px;
+  top: -8px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+
+footer .socials img:hover + div span {
+  background-color: var(--secondary-color);
+}
+
+footer .up {
+  border: 0;
+  padding: 18px;
+  transform: rotate(90deg);
+  background: rgb(38 83 76);
+  border-radius: 8px;
+  position: relative;
+  left: 1193px;
+  top: -21px;
+}
+
+footer .lang {
+  font-size: 16px;
+  color: var(--forth-color);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+footer .lang img {
+  transform: rotate(270deg);
+  margin-left: 10px;
+  width: 10px;
+}
+/* End Footer */
+/* Size on Mobile */
+@media (max-width: 390px) {
+  header .logo {
+    width: 105px;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  header .container::before {
+    display: none;
+  }
+  .nav,
+  .signing {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  main .overlay img:first-child {
+    display: none;
+  }
+  main .overlay img:last-child {
+    width: 340px;
+  }
+  main .content .text h1 {
+    font-size: 29px;
+    width: 363px;
+    left: -7px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 340px;
+    left: 6px;
+  }
+  main .content .text h1 span::after {
+    width: 96px;
+    height: 49px;
+    left: 186px;
+    top: 27px;
+  }
+  main .btns a {
+    font-size: 15px;
+  }
+  main .images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  main .images img {
+    margin-right: 0;
+  }
+  main .images img:first-child {
+    width: 150px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  main .images img:last-child {
+    width: 150px;
+    margin-left: 7px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  .statistics {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .statistics div::before {
+    display: none;
+  }
+  .statistics div h1 {
+    font-size: 26px;
+  }
+  .statistics div h4 {
+    font-size: 14px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .images img {
+    width: 156px;
+    margin-right: 2px;
+    margin-bottom: 25px;
+  }
+  .about .content h2 {
+    font-size: 26px;
+    position: relative;
+    left: 6px;
+  }
+  .about .content p {
+    font-size: 14px;
+    width: 305px;
+  }
+  .about .content h2 span::before {
+    top: -4px;
+    left: -10px;
+    width: 82px;
+    height: 39px;
+  }
+  .about .content button {
+    width: 154px;
+    height: 54px;
+  }
+  .translation .main {
+    width: 339px;
+    font-size: 26px;
+  }
+  .translation .text h1 span::before {
+    left: 80px;
+    top: 65px;
+    width: 169px;
+    height: 36px;
+  }
+  .translation .settings {
+    min-width: 270px;
+  }
+  .translation .settings p {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    left: 21px;
+  }
+  .translation .settings .choice {
+    position: relative;
+    width: 127px;
+    height: 38px;
+    top: -6px;
+    left: -38px;
+  }
+  .translation .settings .choice span:first-child {
+    width: 30px;
+    height: 13px;
+  }
+  .translation .settings .choice span:last-child,
+  .translation .settings .choice span:first-child {
+    font-size: 14px;
+  }
+  .quranic-pictures {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .quranic-pictures .picture {
+    width: 339px;
+    height: 84px;
+  }
+  .quranic-pictures .picture .num {
+    font-size: 13px;
+    width: 2px;
+    height: 2px;
+  }
+  .reciters {
+    flex-direction: column-reverse;
+    height: auto;
+    z-index: -3;
+  }
+  .reciter-info {
+    left: 58px;
+    top: 385px;
+  }
+  .reciters .overlay {
+    top: 301px;
+    left: 36px;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-bottom: 150px;
+    left: 8px;
+    position: relative;
+    bottom: 31px;
+    z-index: -2;
+  }
+  .reciters .info {
+    right: 1px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .reciters .info h1 {
+    font-size: 25px;
+    width: 286px;
+  }
+  .reciters .info h1 span::before {
+    width: 102px;
+    height: 40px;
+    top: 56px;
+    left: 9px;
+  }
+  .reciters .info p {
+    font-size: 14px;
+    width: 350px;
+  }
+  .reciters .arrow {
+    right: 59px;
+    top: 380px;
+    margin-top: 0;
+  }
+  .ellipse {
+    display: none;
+  }
+  .blogs .txt h1 {
+    font-size: 26px;
+  }
+  .blogs .txt h1 span::before {
+    top: 6px;
+    left: 209px;
+    width: 64px;
+    height: 42px;
+  }
+  .blogs .txt p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .blogs .content {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blogs .content .blog {
+    width: 543px;
+    left: 97px;
+    position: relative;
+  }
+  .blogs .content .blog img {
+    width: 118px;
+    height: 118px;
+  }
+  .blogs .content .blog h3 {
+    font-size: 12.01px;
+    width: 210px;
+  }
+  .blogs .content .blog h3::after {
+    top: 45px;
+  }
+  .blogs .content .blog p {
+    font-size: 10px;
+    width: 221px;
+    margin-top: 20px;
+  }
+  .download {
+    height: 386px;
+  }
+  .download .content h1 {
+    font-size: 26px;
+    width: 324px;
+  }
+  .download .content h1 + p {
+    font-size: 14px;
+    width: 320px;
+  }
+  .download .content .btns {
+    width: 95vw;
+  }
+  .download .content h1 span::before {
+    width: 65px;
+    height: 51px;
+    left: 145px;
+    top: 52px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+  footer .links {
+    grid-template-columns: 1fr;
+  }
+  footer .links::after {
+    top: 1148px;
+  }
+  footer .up {
+    left: 284px;
+    top: -34px;
+  }
+  footer .lang {
+    position: relative;
+    top: -28px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 400px) {
+  header .logo {
+    width: 105px;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  header .container::before {
+    display: none;
+  }
+  .nav,
+  .signing {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  main .overlay img:first-child {
+    display: none;
+  }
+  main .overlay img:last-child {
+    width: 429px;
+  }
+  main .content .text h1 {
+    font-size: 29px;
+    width: 363px;
+    left: 6px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 340px;
+    left: 21px;
+  }
+  main .content .text h1 span::after {
+    width: 96px;
+    height: 49px;
+    left: 186px;
+    top: 27px;
+  }
+  main .btns a {
+    font-size: 15px;
+  }
+  main .images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 15px;
+  }
+  main .images img {
+    margin-right: 0;
+  }
+  main .images img:first-child {
+    width: 150px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  main .images img:last-child {
+    width: 150px;
+    margin-left: 7px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  .statistics {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .statistics div::before {
+    display: none;
+  }
+  .statistics div h1 {
+    font-size: 26px;
+  }
+  .statistics div h4 {
+    font-size: 14px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .images img {
+    width: 156px;
+    margin-right: 2px;
+    margin-bottom: 25px;
+  }
+  .about .content h2 {
+    font-size: 26px;
+    position: relative;
+    left: 6px;
+  }
+  .about .content p {
+    font-size: 14px;
+    width: 305px;
+  }
+  .about .content h2 span::before {
+    top: -4px;
+    left: -10px;
+    width: 82px;
+    height: 39px;
+  }
+  .about .content button {
+    width: 154px;
+    height: 54px;
+  }
+  .translation .main {
+    width: 339px;
+    font-size: 26px;
+  }
+  .translation .text h1 span::before {
+    left: 80px;
+    top: 65px;
+    width: 169px;
+    height: 36px;
+  }
+  .translation .settings {
+    min-width: 270px;
+  }
+  .translation .settings p {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    left: 21px;
+  }
+  .translation .settings .choice {
+    position: relative;
+    width: 127px;
+    height: 38px;
+    top: -6px;
+    left: -38px;
+  }
+  .translation .settings .choice span:first-child {
+    width: 30px;
+    height: 13px;
+  }
+  .translation .settings .choice span:last-child,
+  .translation .settings .choice span:first-child {
+    font-size: 14px;
+  }
+  .quranic-pictures {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .quranic-pictures .picture {
+    width: 339px;
+    height: 84px;
+  }
+  .quranic-pictures .picture .num {
+    font-size: 13px;
+    width: 2px;
+    height: 2px;
+  }
+  .reciters {
+    flex-direction: column-reverse;
+    height: auto;
+    z-index: -3;
+  }
+  .reciter-info {
+    left: 58px;
+    top: 385px;
+  }
+  .reciters .overlay {
+    top: 301px;
+    left: 36px;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-bottom: 150px;
+    left: 8px;
+    position: relative;
+    bottom: 31px;
+    z-index: -2;
+  }
+  .reciters .info {
+    right: 1px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .reciters .info h1 {
+    font-size: 25px;
+    width: 286px;
+  }
+  .reciters .info h1 span::before {
+    width: 102px;
+    height: 40px;
+    top: 56px;
+    left: 9px;
+  }
+  .reciters .info p {
+    font-size: 14px;
+    width: 350px;
+  }
+  .reciters .arrow {
+    right: 59px;
+    top: 380px;
+    margin-top: 0;
+  }
+  .ellipse {
+    display: none;
+  }
+  .blogs .txt h1 {
+    font-size: 26px;
+  }
+  .blogs .txt h1 span::before {
+    top: 6px;
+    left: 209px;
+    width: 64px;
+    height: 42px;
+  }
+  .blogs .txt p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .blogs .content {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blogs .content .blog {
+    width: 543px;
+    left: 97px;
+    position: relative;
+  }
+  .blogs .content .blog img {
+    width: 118px;
+    height: 118px;
+  }
+  .blogs .content .blog h3 {
+    font-size: 12.01px;
+    width: 210px;
+  }
+  .blogs .content .blog h3::after {
+    top: 45px;
+  }
+  .blogs .content .blog p {
+    font-size: 10px;
+    width: 221px;
+    margin-top: 20px;
+  }
+  .download {
+    height: 386px;
+  }
+  .download .content h1 {
+    font-size: 26px;
+    width: 324px;
+  }
+  .download .content h1 + p {
+    font-size: 14px;
+    width: 320px;
+  }
+  .download .content .btns {
+    width: 95vw;
+  }
+  .download .content h1 span::before {
+    width: 65px;
+    height: 51px;
+    left: 145px;
+    top: 52px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+  footer .links {
+    grid-template-columns: 1fr;
+  }
+  footer .links::after {
+    top: 1148px;
+  }
+  footer .up {
+    left: 284px;
+    top: -34px;
+  }
+  footer .lang {
+    position: relative;
+    top: -28px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 430px) {
+  header .logo {
+    width: 105px;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  header .container::before {
+    display: none;
+  }
+  .nav,
+  .signing {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  main .overlay img:first-child {
+    display: none;
+  }
+  main .overlay img:last-child {
+    width: 429px;
+  }
+  main .content .text h1 {
+    font-size: 29px;
+    width: 363px;
+    left: 10px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 340px;
+    left: 20px;
+  }
+  main .content .text h1 span::after {
+    width: 96px;
+    height: 49px;
+    left: 186px;
+    top: 27px;
+  }
+  main .btns a {
+    font-size: 15px;
+  }
+  main .images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 18px;
+  }
+  main .images img {
+    margin-right: 0;
+  }
+  main .images img:first-child {
+    width: 150px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  main .images img:last-child {
+    width: 150px;
+    margin-left: 7px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  .statistics {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .statistics div::before {
+    display: none;
+  }
+  .statistics div h1 {
+    font-size: 26px;
+  }
+  .statistics div h4 {
+    font-size: 14px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .images img {
+    width: 156px;
+    margin-right: 2px;
+    margin-bottom: 25px;
+  }
+  .about .content h2 {
+    font-size: 26px;
+    position: relative;
+    left: 6px;
+  }
+  .about .content p {
+    font-size: 14px;
+    width: 305px;
+  }
+  .about .content h2 span::before {
+    top: -4px;
+    left: -10px;
+    width: 82px;
+    height: 39px;
+  }
+  .about .content button {
+    width: 154px;
+    height: 54px;
+  }
+  .translation .main {
+    width: 339px;
+    font-size: 26px;
+  }
+  .translation .text h1 span::before {
+    left: 80px;
+    top: 65px;
+    width: 169px;
+    height: 36px;
+  }
+  .translation .settings {
+    min-width: 270px;
+  }
+  .translation .settings p {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    left: 21px;
+  }
+  .translation .settings .choice {
+    position: relative;
+    width: 127px;
+    height: 38px;
+    top: -6px;
+    left: -38px;
+  }
+  .translation .settings .choice span:first-child {
+    width: 30px;
+    height: 13px;
+  }
+  .translation .settings .choice span:last-child,
+  .translation .settings .choice span:first-child {
+    font-size: 14px;
+  }
+  .quranic-pictures {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .quranic-pictures .picture {
+    width: 339px;
+    height: 84px;
+  }
+  .quranic-pictures .picture .num {
+    font-size: 13px;
+    width: 2px;
+    height: 2px;
+  }
+  .reciters {
+    flex-direction: column-reverse;
+    height: auto;
+    z-index: -3;
+  }
+  .reciter-info {
+    left: 58px;
+    top: 385px;
+  }
+  .reciters .overlay {
+    top: 301px;
+    left: 36px;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-bottom: 150px;
+    left: 8px;
+    position: relative;
+    bottom: 31px;
+    z-index: -2;
+  }
+  .reciters .info {
+    right: 1px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .reciters .info h1 {
+    font-size: 25px;
+    width: 286px;
+  }
+  .reciters .info h1 span::before {
+    width: 102px;
+    height: 40px;
+    top: 56px;
+    left: 9px;
+  }
+  .reciters .info p {
+    font-size: 14px;
+    width: 350px;
+  }
+  .reciters .arrow {
+    right: 59px;
+    top: 380px;
+    margin-top: 0;
+  }
+  .ellipse {
+    display: none;
+  }
+  .blogs .txt h1 {
+    font-size: 26px;
+  }
+  .blogs .txt h1 span::before {
+    top: 6px;
+    left: 166px;
+    width: 64px;
+    height: 42px;
+  }
+  .blogs .txt p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .blogs .content {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blogs .content .blog {
+    width: 543px;
+    left: 97px;
+    position: relative;
+  }
+  .blogs .content .blog img {
+    width: 118px;
+    height: 118px;
+  }
+  .blogs .content .blog h3 {
+    font-size: 12.01px;
+    width: 210px;
+  }
+  .blogs .content .blog h3::after {
+    top: 45px;
+  }
+  .blogs .content .blog p {
+    font-size: 10px;
+    width: 221px;
+    margin-top: 20px;
+  }
+  .download {
+    height: 386px;
+  }
+  .download .content h1 {
+    font-size: 26px;
+    width: 324px;
+  }
+  .download .content h1 + p {
+    font-size: 14px;
+    width: 320px;
+  }
+  .download .content .btns {
+    width: 95vw;
+  }
+  .download .content h1 span::before {
+    width: 65px;
+    height: 51px;
+    left: 145px;
+    top: 52px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+  footer .links {
+    grid-template-columns: 1fr;
+  }
+  footer .links::after {
+    top: 1148px;
+  }
+  footer .up {
+    left: 308px;
+    top: -34px;
+  }
+  footer .lang {
+    position: relative;
+    top: -28px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 430px) {
+  main .content .text h1 {
+    left: 19px;
+  }
+  main .content .text p {
+    left: 36px;
+  }
+  main .images {
+    left: 30px;
+  }
+  .reciter-info {
+    left: 91px;
+  }
+  footer .up {
+    left: 338px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 454px) {
+  header .logo {
+    width: 105px;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  header .container::before {
+    display: none;
+  }
+  .nav,
+  .signing {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  main .overlay img:first-child {
+    display: none;
+  }
+  main .overlay img:last-child {
+    width: 429px;
+  }
+  main .content .text h1 {
+    font-size: 29px;
+    width: 363px;
+    left: 10px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 340px;
+    left: 20px;
+  }
+  main .content .text h1 span::after {
+    width: 96px;
+    height: 49px;
+    left: 186px;
+    top: 27px;
+  }
+  main .btns a {
+    font-size: 15px;
+  }
+  main .images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 18px;
+  }
+  main .images img {
+    margin-right: 0;
+  }
+  main .images img:first-child {
+    width: 150px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  main .images img:last-child {
+    width: 150px;
+    margin-left: 7px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  .statistics {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .statistics div::before {
+    display: none;
+  }
+  .statistics div h1 {
+    font-size: 26px;
+  }
+  .statistics div h4 {
+    font-size: 14px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .images img {
+    width: 156px;
+    margin-right: 2px;
+    margin-bottom: 25px;
+  }
+  .about .content h2 {
+    font-size: 26px;
+    position: relative;
+    left: 6px;
+  }
+  .about .content p {
+    font-size: 14px;
+    width: 305px;
+  }
+  .about .content h2 span::before {
+    top: -4px;
+    left: -10px;
+    width: 82px;
+    height: 39px;
+  }
+  .about .content button {
+    width: 154px;
+    height: 54px;
+  }
+  .translation .main {
+    width: 339px;
+    font-size: 26px;
+  }
+  .translation .text h1 span::before {
+    left: 80px;
+    top: 65px;
+    width: 169px;
+    height: 36px;
+  }
+  .translation .settings {
+    min-width: 270px;
+  }
+  .translation .settings p {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    left: 21px;
+  }
+  .translation .settings .choice {
+    position: relative;
+    width: 127px;
+    height: 38px;
+    top: -6px;
+    left: -38px;
+  }
+  .translation .settings .choice span:first-child {
+    width: 30px;
+    height: 13px;
+  }
+  .translation .settings .choice span:last-child,
+  .translation .settings .choice span:first-child {
+    font-size: 14px;
+  }
+  .quranic-pictures {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .quranic-pictures .picture {
+    width: 339px;
+    height: 84px;
+  }
+  .quranic-pictures .picture .num {
+    font-size: 13px;
+    width: 2px;
+    height: 2px;
+  }
+  .reciters {
+    flex-direction: column-reverse;
+    height: auto;
+    z-index: -3;
+  }
+  .reciter-info {
+    left: 58px;
+    top: 385px;
+  }
+  .reciters .overlay {
+    top: 301px;
+    left: 36px;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-bottom: 150px;
+    left: 8px;
+    position: relative;
+    bottom: 31px;
+    z-index: -2;
+  }
+  .reciters .info {
+    right: 1px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .reciters .info h1 {
+    font-size: 25px;
+    width: 286px;
+  }
+  .reciters .info h1 span::before {
+    width: 102px;
+    height: 40px;
+    top: 56px;
+    left: 9px;
+  }
+  .reciters .info p {
+    font-size: 14px;
+    width: 350px;
+  }
+  .reciters .arrow {
+    right: 59px;
+    top: 380px;
+    margin-top: 0;
+  }
+  .ellipse {
+    display: none;
+  }
+  .blogs .txt h1 {
+    font-size: 26px;
+  }
+  .blogs .txt h1 span::before {
+    top: 6px;
+    left: 166px;
+    width: 64px;
+    height: 42px;
+  }
+  .blogs .txt p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .blogs .content {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blogs .content .blog {
+    width: 543px;
+    left: 97px;
+    position: relative;
+  }
+  .blogs .content .blog img {
+    width: 118px;
+    height: 118px;
+  }
+  .blogs .content .blog h3 {
+    font-size: 12.01px;
+    width: 210px;
+  }
+  .blogs .content .blog h3::after {
+    top: 45px;
+  }
+  .blogs .content .blog p {
+    font-size: 10px;
+    width: 221px;
+    margin-top: 20px;
+  }
+  .download {
+    height: 386px;
+  }
+  .download .content h1 {
+    font-size: 26px;
+    width: 324px;
+  }
+  .download .content h1 + p {
+    font-size: 14px;
+    width: 320px;
+  }
+  .download .content .btns {
+    width: 95vw;
+  }
+  .download .content h1 span::before {
+    width: 65px;
+    height: 51px;
+    left: 145px;
+    top: 52px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+  footer .links {
+    grid-template-columns: 1fr;
+  }
+  footer .links::after {
+    top: 1148px;
+  }
+  footer .up {
+    left: 308px;
+    top: -34px;
+  }
+  footer .lang {
+    position: relative;
+    top: -28px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 464px) {
+  header .logo {
+    width: 105px;
+  }
+  header .container {
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  header .container::before {
+    display: none;
+  }
+  .nav,
+  .signing {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+  main .overlay img:first-child {
+    display: none;
+  }
+  main .overlay img:last-child {
+    width: 429px;
+  }
+  main .content .text h1 {
+    font-size: 29px;
+    width: 363px;
+    left: 41px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 340px;
+    left: 52px;
+  }
+  main .content .text h1 span::after {
+    width: 96px;
+    height: 49px;
+    left: 186px;
+    top: 27px;
+  }
+  main .btns a {
+    font-size: 15px;
+  }
+  main .images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 50px;
+  }
+  main .images img {
+    margin-right: 0;
+  }
+  main .images img:first-child {
+    width: 150px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  main .images img:last-child {
+    width: 150px;
+    margin-left: 7px;
+    /* top: 10px;
+    left: 10px; */
+  }
+  .statistics {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .statistics div::before {
+    display: none;
+  }
+  .statistics div h1 {
+    font-size: 26px;
+  }
+  .statistics div h4 {
+    font-size: 14px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .images img {
+    width: 156px;
+    margin-right: 2px;
+    margin-bottom: 25px;
+  }
+  .about .content h2 {
+    font-size: 26px;
+    position: relative;
+    left: 6px;
+  }
+  .about .content p {
+    font-size: 14px;
+    width: 305px;
+  }
+  .about .content h2 span::before {
+    top: -4px;
+    left: -10px;
+    width: 82px;
+    height: 39px;
+  }
+  .about .content button {
+    width: 154px;
+    height: 54px;
+  }
+  .translation .main {
+    width: 339px;
+    font-size: 26px;
+  }
+  .translation .text h1 span::before {
+    left: 80px;
+    top: 65px;
+    width: 169px;
+    height: 36px;
+  }
+  .translation .settings {
+    min-width: 270px;
+  }
+  .translation .settings p {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    left: 21px;
+  }
+  .translation .settings .choice {
+    position: relative;
+    width: 127px;
+    height: 38px;
+    top: -6px;
+    left: -38px;
+  }
+  .translation .settings .choice span:first-child {
+    width: 30px;
+    height: 13px;
+  }
+  .translation .settings .choice span:last-child,
+  .translation .settings .choice span:first-child {
+    font-size: 14px;
+  }
+  .quranic-pictures {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .quranic-pictures .picture {
+    width: 339px;
+    height: 84px;
+  }
+  .quranic-pictures .picture .num {
+    font-size: 13px;
+    width: 2px;
+    height: 2px;
+  }
+  .reciters {
+    flex-direction: column-reverse;
+    height: auto;
+    z-index: -3;
+  }
+  .reciter-info {
+    left: 108px;
+    top: 385px;
+  }
+  .reciters .overlay {
+    top: 322px;
+    left: 98px;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-bottom: 150px;
+    left: 8px;
+    position: relative;
+    bottom: 31px;
+    z-index: -2;
+  }
+  .reciters .info {
+    right: 1px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .reciters .info h1 {
+    font-size: 25px;
+    width: 286px;
+  }
+  .reciters .info h1 span::before {
+    width: 102px;
+    height: 40px;
+    top: 56px;
+    left: 9px;
+  }
+  .reciters .info p {
+    font-size: 14px;
+    width: 350px;
+  }
+  .reciters .arrow {
+    right: 59px;
+    top: 380px;
+    margin-top: 0;
+  }
+  .ellipse {
+    display: none;
+  }
+  .blogs .txt h1 {
+    font-size: 26px;
+  }
+  .blogs .txt h1 span::before {
+    top: 6px;
+    left: 166px;
+    width: 64px;
+    height: 42px;
+  }
+  .blogs .txt p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .blogs .content {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .blogs .content .blog {
+    width: 543px;
+    left: 97px;
+    position: relative;
+  }
+  .blogs .content .blog img {
+    width: 118px;
+    height: 118px;
+  }
+  .blogs .content .blog h3 {
+    font-size: 12.01px;
+    width: 210px;
+  }
+  .blogs .content .blog h3::after {
+    top: 45px;
+  }
+  .blogs .content .blog p {
+    font-size: 10px;
+    width: 221px;
+    margin-top: 20px;
+  }
+  .download {
+    height: 386px;
+  }
+  .download .content h1 {
+    font-size: 26px;
+    width: 324px;
+  }
+  .download .content h1 + p {
+    font-size: 14px;
+    width: 320px;
+  }
+  .download .content .btns {
+    width: 95vw;
+  }
+  .download .content h1 span::before {
+    width: 65px;
+    height: 51px;
+    left: 145px;
+    top: 52px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+  footer .links {
+    grid-template-columns: 1fr;
+  }
+  footer .links::after {
+    top: 1148px;
+  }
+  footer .up {
+    left: 368px;
+    top: -34px;
+  }
+  footer .lang {
+    position: relative;
+    top: -28px;
+  }
+}
+@media (min-width: 835px) and (max-width: 838px) {
+  header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container::before {
+    display: none;
+  }
+  header .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header__sign-up {
+    padding: 15px 12px;
+  }
+  main .overlay img {
+    width: 419px;
+  }
+  main .content .text h1 {
+    font-size: 32px;
+    left: 91px;
+  }
+  main .content .text p {
+    font-size: 14px;
+    width: 529px;
+    left: 164px;
+  }
+  main .content .text h1 span::after {
+    left: 538px;
+    top: -8px;
+    width: 94px;
+    height: 49px;
+  }
+  main .images img:first-child {
+    width: 391px;
+  }
+  main .images img:last-child {
+    width: 275px;
+  }
+  .statistics div:not(:last-child)::before {
+    display: none;
+  }
+  .translation .settings {
+    min-width: 722px;
+  }
+  .quranic-pictures {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-left: 10px;
+  }
+  .reciter-info {
+    left: 68px;
+  }
+  .reciters .overlay {
+    top: 164px;
+    left: 86px;
+  }
+  .reciters .ellipse {
+    left: 616px;
+  }
+  .blogs .content {
+    gap: 8px;
+  }
+  .blogs .content .blog img {
+    width: 120px;
+    height: 120px;
+  }
+  .blogs .content .blog h3 {
+    width: 227px;
+    font-size: 18px;
+  }
+  .blogs .content .blog p {
+    width: 226px;
+  }
+  .blogs .content .blog h3::after {
+    top: 61px;
+  }
+  .blogs .content .blog {
+    width: 352px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 850px) and (max-width: 1030px) {
+  header .container {
+    padding-right: 27px;
+    padding-left: 65px;
+  }
+  main .overlay img {
+    width: 482px;
+  }
+  main .content .text {
+    position: relative;
+    right: 111px;
+  }
+  main .images img:first-child {
+    width: 517px;
+  }
+  main .images img:last-child {
+    width: 363px;
+  }
+  .about {
+    display: grid;
+  }
+  .about .content {
+    margin-top: 20px;
+  }
+  .translation .settings {
+    min-width: 927px;
+  }
+  .quranic-pictures {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reciters .images img:not(:last-child) {
+    display: none;
+  }
+  .reciters .images img:last-child {
+    margin-left: 10px;
+  }
+  .reciter-info {
+    left: 56px;
+  }
+  .reciters .overlay {
+    top: 166px;
+    left: 65px;
+  }
+  .reciters .info {
+    right: 154px;
+  }
+  .reciters .ellipse {
+    top: 28px;
+    left: 810px;
+  }
+  .blogs .content {
+    grid-template-columns: 500px 500px;
+  }
+  .blogs .content .blog {
+    width: 460px;
+  }
+  .blogs .content .blog img {
+    width: 160px;
+    height: 160px;
+  }
+  footer .up {
+    left: 940px;
+  }
+  .w-355 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 900px) and (max-width: 982px) {
+  main .content .text {
+    right: 131px;
+  }
+  main .btns {
+    position: relative;
+    left: 20px;
+  }
+  main .images img:first-child {
+    width: 510px;
+  }
+  main .images img:last-child {
+    width: 357px;
+  }
+  .statistics div:not(:last-child)::before {
+    display: none;
+  }
+  .blogs .content .blog img {
+    width: 120px;
+    height: 120px;
+  }
+  .blogs .content .blog h3 {
+    width: 267px;
+    font-size: 20px;
+  }
+  .blogs .content .blog h3::after {
+    top: 61px;
+  }
+  .blogs .content .blog {
+    width: 400px;
+    margin-left: 25px;
+  }
+  .w-355 {
+    font-size: 15px;
+  }
+  footer .links {
+    margin-left: 28px;
+  }
+  footer .links::after {
+    width: 89%;
+    right: 68px;
+  }
+  footer .main-row {
+    width: 270px;
+  }
+  footer .up {
+    left: 851px;
+  }
+}
